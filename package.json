@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "start:all": "concurrently \"npm run start:server\" \"npm run dev:client\"",
+    "start:server": "node server/server.js",
+    "dev:client": "npm run dev --prefix D:/seoultech/TreasureHunt"
   },
   "repository": {
     "type": "git",
@@ -41,6 +44,7 @@
   "devDependencies": {
     "@types/node": "22.10.1",
     "@types/react": "18.3.12",
+    "concurrently": "^9.1.0",
     "typescript": "5.7.2"
   }
 }

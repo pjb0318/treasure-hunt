@@ -546,6 +546,9 @@ video {
 .mr-2 {
   margin-right: 0.5rem;
 }
+.block {
+  display: block;
+}
 .inline-block {
   display: inline-block;
 }
@@ -862,6 +865,14 @@ body {
 .focus\:ring-indigo-500:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity, 1));
+}
+
+@media (min-width: 640px) {
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 

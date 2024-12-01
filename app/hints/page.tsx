@@ -13,10 +13,10 @@ export default function Hints() {
   useEffect(() => {
     const fetchHints = async () => {
       try {
-        const response = await fetch('/hints'); // Adjust the endpoint based on your backend route
+        const response = await fetch('/api/hints'); // API 엔드포인트를 '/api/hints'로 설정
         if (!response.ok) throw new Error('Failed to fetch hints');
         const data = await response.json();
-        setHints(data); // Store hints in state
+        setHints(data); // 서버에서 받은 힌트를 상태에 저장
       } catch (error) {
         console.error('Error fetching hints:', error);
       }

@@ -6,6 +6,16 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/code-entry/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/code-entry/page.js"
+    ],
+    "/congratulations/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/congratulations/page.js"
+    ],
     "/hints/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -16,15 +26,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/leaderboard/page.js"
     ],
-    "/code-entry/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/code-entry/page.js"
-    ],
-    "/congratulations/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/congratulations/page.js"
+      "static/chunks/app/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",
